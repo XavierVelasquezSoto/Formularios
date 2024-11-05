@@ -26,4 +26,122 @@ ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  background-image: url(../assets/images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.container-cards{
+  width: 343px;
+  height: 251px;
+  padding-top: 32px;
+}
+
+.card-back{
+  position: relative;
+  width: 300px;
+  height: 170px;
+  left: 100px;
+  top: 20px;
+}
+
+.card-front{
+  position: relative;
+  width: 300px;
+  height: 170px;
+  bottom: 57px;
+  left: 36px;
+}
+
+.box-card-name{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 36px;
+  top: 103px;
+}
+
+.text-card{
+  font-weight: 500;
+  font-size: 12px;
+  color: #21092F;
+  letter-spacing: 2px;
+  padding-bottom: 9px;
+
+}
+
+.space-card{
+  width: 327px;
+  height: 45px;
+  border-radius: 10px;  
+  font-size: 15px;
+  padding-left: 10px;
+  border-color: #DFDEE0;
+}
+
+.box-card-number{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 36px;
+  top: 120px;
+}
+
+.box-card-date{
+  position: relative;
+  line-height: auto;
+  left: 36px;
+  top: 150px;
+}
+
+.month-card{
+  position: relative;
+  display: flex;
+  width: 72px;
+  height: 45px;
+  top: 15px;
+  border-radius: 10px;
+  padding-left: 10px;
+  border-color: #DFDEE0;
+}
+
+.year-card{
+  position: relative;
+  width: 72px;
+  height: 45px;
+  left: 90px;
+  bottom: 30px;
+  border-radius: 10px;
+  padding-left: 10px;
+  border-color: #DFDEE0;
+}
+
+.box-card-code{
+  position: relative;
+  left: 220px;
+  top: 38px;
+  
+}
+
+.code-card{
+  display: flex;
+  width: 145px;
+  height: 45px;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding-left: 10px;
+  border-color: #DFDEE0;
+}
+
+.confirm{
+  position: relative;
+  background-color: #21092F;
+  color: white;
+  width: 338px;
+  height: 53px;
+  border-radius: 10px;
+  top: 66px;
+  left: 28px;
+  font-size: 18px;
 }

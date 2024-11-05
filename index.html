@@ -4,22 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,700;1,700&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <form id="form">
-      <div>
-        <!-- consejo, añadir div siempre label/input que van juntos -->
-        <label for="name">Name</label>
-        <input type="text" id="name" />
+    <form>
+      <div class="container-cards">
+        <div class="card-back">
+          <img src="./assets/images/bg-card-back.png" alt="card-visual2" />
+        </div>
+        <div class="card-front">
+          <img src="./assets/images/bg-card-front.png" alt="card-visual1" />
+        </div>
       </div>
-      <input type="submit" value="Send" />
-      <!-- value añade texto al botón -->
-      <!-- <input type="text" />
-      <input type="email"/>
-      <input type="tel" /> -->
+
+      <div class="box-card-name">
+        <label for="name-card" class="text-card">CARDHOLDER NAME</label>
+        <input
+          type="text"
+          id="name-card"
+          class="space-card"
+          placeholder="e.g. Jane Appleseed"
+        />
+      </div>
+
+      <div class="box-card-number">
+        <label for="number-card" class="text-card">CARD NUMBER</label>
+        <input
+          type="tel"
+          id="number-card"
+          class="space-card"
+          placeholder="e.g. 1234 5678 9123 0000"
+        />
+      </div>
+
+      <div class="box-card-date">
+        <label for="date-card" class="text-card">Exp. Date (MM/YY)</label>
+        <input type="tel" id="date-card" class="month-card" placeholder="MM" />
+        <input type="tel" id="date-card" class="year-card" placeholder="YY" />
+      </div>
+
+      <div class="box-card-code">
+        <label for="cvc-card" class="text-card">CVC</label>
+        <input
+          type="tel"
+          id="cvc-card"
+          class="code-card"
+          placeholder="e.g 123"
+        />
+      </div>
+
+      <input type="submit" value="Confirm" class="confirm" />
     </form>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
 <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+
+<!--<form id="form">
+      <div>
+        consejo, añadir div siempre label/input que van juntos
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+      </div>
+      <input type="submit" value="Send" />
+      value añade texto al botón
+      <input type="text" />
+      <input type="email"/>
+      <input type="tel" />
+    </form> -->
