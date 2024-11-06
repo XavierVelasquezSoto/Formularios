@@ -25,7 +25,7 @@
         <p id="cardColorNumber" class="card-color-number">
           0000 0000 0000 0000
         </p>
-        <div class="montAndYear">
+        <div class="monthAndYear">
           <span id="cardMonth" class="cardYear">00</span>
           /
           <span id="cardYear" class="cardMonth">00</span>
@@ -83,10 +83,10 @@
                 maxlength="2"
               />
             </div>
+            <span class="errorMonthYear errorDisplay">Can’t be blank</span>
           </div>
 
           <!-- <label for="dateCard" class="text-card"></label> -->
-          <span class="errorMonthYear errorDisplay">Can’t be blank</span>
 
           <div class="cvc">
             <label for="cvcCard" class="text-card">CVC</label>
@@ -98,9 +98,8 @@
               name="cvc"
               maxlength="4"
             />
+            <span class="errorCVC errorDisplay">Can’t be blank</span>
           </div>
-
-          <span class="errorCVC errorDisplay">Can’t be blank</span>
         </div>
 
         <!-- <div class="box-card-code"></div> -->
