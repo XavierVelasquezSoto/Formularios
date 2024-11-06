@@ -69,12 +69,21 @@ const cardCVC = () => {
 const formInfo = event => {
   event.preventDefault();
 
-  const name = formElement.name.value  
+  const name = formElement.name.value
   const number = formElement.number.value
   const month = formElement.month.value
   const year = formElement.year.value
   const cvc = formElement.cvc.value
   //console.log(form.age.value);
+
+  if (name.value === "")
+    {
+      nameCardElement.classList.remove("errorDisplay")
+    }
+  else
+    {
+      nameCardElement.classList.add("errorDisplay")
+    }
   
 }
 

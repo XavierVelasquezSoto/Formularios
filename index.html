@@ -43,6 +43,7 @@
             class="space-card"
             placeholder="e.g. Jane Appleseed"
             name="name"
+            maxlength="25"
           />
           <span class="errorBlankName errorDisplay">Can’t be blank</span>
         </div>
@@ -57,9 +58,7 @@
             name="number"
             maxlength="16"
           />
-          <span class="errorNumber errorDisplay"
-            >Wrong format, numbers only</span
-          >
+          <span class="errorNumber errorDisplay">Number is too short</span>
         </div>
 
         <div class="box-card-date">
@@ -86,8 +85,6 @@
             <span class="errorMonthYear errorDisplay">Can’t be blank</span>
           </div>
 
-          <!-- <label for="dateCard" class="text-card"></label> -->
-
           <div class="cvc">
             <label for="cvcCard" class="text-card">CVC</label>
             <input
@@ -102,7 +99,6 @@
           </div>
         </div>
 
-        <!-- <div class="box-card-code"></div> -->
         <div>
           <input type="submit" value="Confirm" class="confirm" />
         </div>
