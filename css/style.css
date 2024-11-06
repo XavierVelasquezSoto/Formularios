@@ -162,7 +162,7 @@ body {
   border-radius: 10px;
   font-size: 18px;
   border: none;
-  margin-top: 28px;
+  margin-top: 26px;
 }
 
 .card-color-name{
@@ -239,8 +239,8 @@ body {
   font-weight: 500;
 }
 
-.errorDisplay{
+/* .errorDisplay{
   display: none;
 }
-
+ */
 
