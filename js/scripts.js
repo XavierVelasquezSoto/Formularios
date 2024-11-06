@@ -12,6 +12,11 @@ const cardMonthElement = document.getElementById("cardMonth")
 const cardYearElement = document.getElementById("cardYear")
 const cardCvcElement = document.getElementById("cardCvc")
 
+const errorFirstElement = document.getElementById("error1") //span error!!
+const errorSecondElement = document.getElementById("error2")
+const errorThirdElement = document.getElementById("error3")
+const errorFourthElement = document.getElementById("error3")
+const errorFifthElement = document.getElementById("error4")
 
 const cardFrontName = () => {
   if (nameCardElement.value === "")
@@ -74,16 +79,59 @@ const formInfo = event => {
   const month = formElement.month.value
   const year = formElement.year.value
   const cvc = formElement.cvc.value
-  //console.log(form.age.value);
-
-  if (name.value === "")
+  
+  if (nameCardElement.value === "") //error1
     {
-      nameCardElement.classList.remove("errorDisplay")
+      errorFirstElement.classList.remove("errorDisplay")
     }
   else
     {
-      nameCardElement.classList.add("errorDisplay")
+      errorFirstElement.classList.add("errorDisplay")
     }
+
+    
+  if (numberCardElement.value === "") //error2
+    {
+      errorSecondElement.classList.remove("errorDisplay")
+    }
+  else
+    {
+      errorSecondElement.classList.add("errorDisplay")
+    }
+
+
+  if (monthCardElement.value === "") //error3
+    {
+      errorThirdElement.classList.remove("errorDisplay")
+    }
+    else
+    {
+      errorThirdElement.classList.add("errorDisplay")
+    }
+
+
+    if (yearCardElement.value === "") //error4
+    {
+      errorFourthElement.classList.remove("errorDisplay")
+    }
+    else
+    {
+      errorFourthElement.classList.add("errorDisplay")
+    }
+
+
+    if (cvcCardElement.value === "") //error5
+    {
+      errorFifthElement.classList.remove("errorDisplay")
+    }
+    else
+    {
+      errorFifthElement.classList.add("errorDisplay")
+    }
+
+  //console.log(form.age.value);
+
+  
   
 }
 
