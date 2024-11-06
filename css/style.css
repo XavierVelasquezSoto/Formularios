@@ -99,7 +99,6 @@ body {
 
 .box-card-date{
   display: flex;
-  align-items: center;
   margin-top: 20px;
 }
 
@@ -135,7 +134,9 @@ body {
   display: flex;
 }
 .cvc{
+  margin: 0;
   padding-left: 10px;
+  margin-top: 10px;
 }
 
 
