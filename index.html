@@ -13,28 +13,28 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container-cards">
-      <div class="card-back">
-        <img src="./assets/images/bg-card-back.png" alt="card-visual2" />
-        <span id="cardCvc" class="cardCvc">000</span>
-      </div>
+    <main class="main">
+      <div class="container-cards">
+        <div class="card-back">
+          <img src="./assets/images/bg-card-back.png" alt="card-visual2" />
+          <span id="cardCvc" class="cardCvc">000</span>
+        </div>
 
-      <div class="card-front">
-        <img src="./assets/images/bg-card-front.png" alt="card-visual1" />
-        <p id="cardColorName" class="card-color-name">JANE APPLESSED</p>
-        <p id="cardColorNumber" class="card-color-number">
-          0000 0000 0000 0000
-        </p>
-        <div class="monthAndYear">
-          <span id="cardMonth" class="cardYear">00</span>
-          /
-          <span id="cardYear" class="cardMonth">00</span>
+        <div class="card-front">
+          <img src="./assets/images/bg-card-front.png" alt="card-visual1" />
+          <p id="cardColorName" class="card-color-name">JANE APPLESSED</p>
+          <p id="cardColorNumber" class="card-color-number">
+            0000 0000 0000 0000
+          </p>
+          <div class="monthAndYear">
+            <span id="cardMonth" class="cardYear">00</span>
+            /
+            <span id="cardYear" class="cardMonth">00</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <form id="form">
-      <div class="container">
+      <form id="form" class="container">
         <div class="box-card-name">
           <label for="nameCard" class="text-card">CARDHOLDER NAME</label>
           <input
@@ -110,8 +110,8 @@
         <div>
           <input type="submit" value="Confirm" class="confirm" />
         </div>
-      </div>
-    </form>
+      </form>
+    </main>
     <script src="./js/scripts.js"></script>
   </body>
 </html>

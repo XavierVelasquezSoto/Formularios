@@ -26,8 +26,9 @@ const cardFrontName = () => {
   else{
     cardFrontNameElement.textContent = nameCardElement.value.toUpperCase()
   }
+}   //front card name
 
-}
+
 const cardFrontNumber = () => {
   if (numberCardElement.value === "")
     {
@@ -37,7 +38,9 @@ const cardFrontNumber = () => {
     {
       cardFrontNumberElement.textContent = numberCardElement.value
     }
-}
+}   //front card numbers
+
+
 const cardMonth = () => {
   if (monthCardElement.value === "")
     {
@@ -47,7 +50,9 @@ const cardMonth = () => {
     {
       cardMonthElement.textContent = monthCardElement.value      
     }
-}
+}   //front card month
+
+
 const cardYear = () => {
   if (yearCardElement.value === "")
     {
@@ -57,7 +62,9 @@ const cardYear = () => {
     {
     cardYearElement.textContent = yearCardElement.value
     }
-}
+}   //front card year
+
+
 const cardCVC = () => {
   if (cvcCardElement.value === "")
     {
@@ -67,7 +74,7 @@ const cardCVC = () => {
     {
       cardCvcElement.textContent = cvcCardElement.value
     }
-}
+}   //back card cvc
 
 
 
