@@ -40,7 +40,7 @@
           <input
             type="text"
             id="nameCard"
-            class="space-card"
+            class="space-card errorColor"
             placeholder="e.g. Jane Appleseed"
             name="name"
             maxlength="25"
@@ -55,7 +55,7 @@
           <input
             type="tel"
             id="numberCard"
-            class="space-card"
+            class="space-card errorColor"
             placeholder="e.g. 1234 5678 9123 0000"
             name="number"
             maxlength="16"
@@ -72,7 +72,7 @@
               <input
                 type="tel"
                 id="dateCard1"
-                class="month-card"
+                class="month-card errorColor"
                 placeholder="MM"
                 name="month"
                 maxlength="2"
@@ -80,13 +80,16 @@
               <input
                 type="tel"
                 id="dateCard2"
-                class="year-card"
+                class="year-card errorColor"
                 placeholder="YY"
                 name="year"
                 maxlength="2"
               />
             </div>
-            <span id="error3" class="errorMonthYear errorDisplay"
+            <span id="error3" class="errorMonth errorDisplay"
+              >Can’t be blank</span
+            >
+            <span id="error4" class="errorYear errorDisplay"
               >Can’t be blank</span
             >
           </div>
@@ -96,12 +99,12 @@
             <input
               type="tel"
               id="cvcCard"
-              class="code-card"
+              class="code-card errorColor"
               placeholder="e.g 123"
               name="cvc"
               maxlength="4"
             />
-            <span id="error4" class="errorCVC errorDisplay"
+            <span id="error5" class="errorCVC errorDisplay"
               >Can’t be blank</span
             >
           </div>

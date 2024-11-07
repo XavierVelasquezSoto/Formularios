@@ -15,8 +15,8 @@ const cardCvcElement = document.getElementById("cardCvc")
 const errorFirstElement = document.getElementById("error1") //span error!!
 const errorSecondElement = document.getElementById("error2")
 const errorThirdElement = document.getElementById("error3")
-const errorFourthElement = document.getElementById("error3")
-const errorFifthElement = document.getElementById("error4")
+const errorFourthElement = document.getElementById("error4")
+const errorFifthElement = document.getElementById("error5")
 
 const cardFrontName = () => {
   if (nameCardElement.value === "")
@@ -130,10 +130,12 @@ const formInfo = event => {
     if (cvcCardElement.value === "") //error5
     {
       errorFifthElement.classList.remove("errorDisplay")
+      
     }
     else
     {
       errorFifthElement.classList.add("errorDisplay")
+      
     }
 
   //console.log(form.age.value);

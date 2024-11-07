@@ -212,7 +212,7 @@ body {
   border-radius: 10px;
   font-size: 18px;
   border: none;
-  margin-top: 26px;
+  margin-top: 36px;
 }
 @media screen and (width>768px) {
   .confirm{
@@ -324,14 +324,38 @@ body {
 }
 
 
-.errorMonthYear{
+.errorMonth{
   position: relative;
   font-size: 12px;
   top: 10px;
   color: red;
   font-weight: 500;
   margin: 0;
+  width: 85px;
 
+}
+
+.errorYear{
+  position: absolute;
+  font-size: 12px;
+  left: 130px;
+  bottom: 275px;
+  color: red;
+  font-weight: 500;
+  margin: 0;
+  width: 85px;
+}
+
+@media screen and (width > 768px) {
+  .errorYear{
+    font-size: 12px;
+    left: 865px;
+    bottom: 342px;
+    color: red;
+    font-weight: 500;
+    margin: 0;
+    width: 85px;
+  }
 }
 
 .errorCVC{
@@ -345,5 +369,6 @@ body {
 .errorDisplay{
   display: none;
 }
+
 
 
